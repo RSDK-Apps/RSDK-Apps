@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Bookmark Mega Suite</title>
+  <style>
+    :root {
+      --bg-page: #f3f4f6;
+      --bg-card: #ffffff;
+      --text-main: #1f2937;
+      --text-heading: #111827;
+      --text-muted: #6b7280;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border-subtle: #e5e7eb;
+      --code-bg: #f1f5f9;
+      --code-text: #0f172a;
+      --quote-bg: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      margin: 0;
+      padding: 2.5rem 1.25rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 2.75rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-subtle);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border-subtle);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h1 {
+      margin: 0 0 0.4rem 0;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: -0.02em;
+    }
+
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin: 2rem 0 0.65rem 0;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    p {
+      margin: 0 0 1rem 0;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 1.25rem 0;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      font-size: 0.975rem;
+    }
+
+    li strong {
+      color: var(--text-heading);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.875em;
+      background-color: var(--code-bg);
+      color: var(--code-text);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    blockquote {
+      background-color: var(--quote-bg);
+      border-left: 4px solid var(--accent);
+      margin: 1.25rem 0;
+      padding: 0.9rem 1.15rem;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      color: #1e3a8a;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.15s ease;
+    }
+
+    .back-link:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.75rem;
+      }
+      .container {
+        padding: 1.75rem 1.35rem;
+        border-radius: 8px;
+      }
+      h1 {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy for Bookmark Mega Suite</h1>
+      <div class="effective-date">Effective Date: November 11, 2026</div>
+    </header>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>Bookmark Mega Suite (&ldquo;the Extension&rdquo;) is a browser extension designed to help you organize, style, back up, and maintain your Chrome bookmarks. We respect your privacy and are committed to transparency regarding how your information is handled.</p>
+    </section>
+
+    <section>
+      <h2>2. Local Data Storage (Your Bookmarks &amp; Settings)</h2>
+      <p>All bookmark data, custom styling, custom icons, notes, and extension preferences are processed and stored locally on your device using Chrome's built-in <code>chrome.bookmarks</code> and <code>chrome.storage</code> APIs.</p>
+      <ul>
+        <li><strong>Private Folders:</strong> Any bookmarks placed inside the Extension's Private Folders are encrypted locally on your device using AES-GCM encryption and PBKDF2 key derivation. Your Private Folder passwords are never transmitted to or stored on any external server.</li>
+        <li><strong>Broken Link Scanner &amp; Favicons:</strong> When you run the Broken Link Scanner or display website favicons, your browser makes direct requests to those bookmarked URLs or Google's favicon service to check link status and retrieve icons. Your bookmark collection is never uploaded to the servers.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Information Collected for Licensing &amp; Payments</h2>
+      <p>Bookmark Mega Suite offers a 30-day free trial followed by an optional one-time purchase of $2.50 for a lifetime license. To process payments and verify license status, the Extension uses third-party payment services <strong>ExtensionPay</strong> and <strong>Stripe</strong>:</p>
+      <ul>
+        <li><strong>Personally Identifiable Information:</strong> When you purchase a license or log in to restore a previous purchase, ExtensionPay and Stripe collect your <strong>email address</strong> to link your license to your account.</li>
+        <li><strong>Financial &amp; Payment Information:</strong> Payment transactions are handled securely by Stripe. We do not collect, process, or store your credit card or banking details. We only have access to basic transaction records (such as payment status, date, and your associated email address) to provide customer support and verify active licenses.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Customer Support</h2>
+      <p>If you choose to contact us for bug reports or support via our external support form (hosted on Tally.so), we collect only the information you voluntarily submit (such as your email address and description of the issue) solely for the purpose of responding to your inquiry.</p>
+    </section>
+
+    <section>
+      <h2>5. How We Use Information &amp; Chrome Web Store Limited Use Disclosure</h2>
+      <p>We use the limited data described above strictly to operate the Extension, verify paid licenses, and provide customer support. We never sell, rent, or trade user data to third parties, and we never use user data for advertising or creditworthiness purposes.</p>
+      <blockquote>
+        The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>6. Data Security</h2>
+      <p>All communication with ExtensionPay and Stripe occurs over encrypted HTTPS connections. Local private folder data is protected at rest using industry-standard AES-GCM encryption.</p>
+    </section>
+
+    <section>
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>If our data handling practices change in the future, we will update this Privacy Policy, revise the Effective Date at the top, and provide notice as required by Chrome Web Store policies.</p>
+    </section>
+
+    <section>
+      <h2>8. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or your data, please reach out through the support link available in the FAQ on the Extension's Options page.</p>
+    </section>
+
+    <footer>
+      <a href="index.html" class="back-link">&larr; Back to Bookmark Mega Suite</a>
+    </footer>
+  </main>
+</body>
+</html>
